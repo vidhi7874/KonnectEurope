@@ -1,0 +1,170 @@
+/* purgecss start ignore */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: "Lato", sans-serif;
+  }
+}
+@layer components {
+  .inputStyle {
+    @apply w-full px-4 py-2 mt-2 border border-gray rounded-xl;
+  }
+}
+
+.bg-err{
+  background-color: #F52E2E !important;
+}
+
+body {
+  /* @apply bg-white-500; */
+}
+p {
+  /* @apply text-black-500; */
+}
+
+.input-style {
+  @apply focus:outline-0 mt-4 px-3 border  rounded-lg bg-inputBgLight placeholder-slate-400 w-full  contrast-more:border-slate-400 contrast-more:placeholder-slate-300;
+}
+
+.animation-hover:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  height: 2px;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  /* @apply w-0 bg-orange-500 left-1/2 block bottom-0 absolute; */
+}
+.animation-active:after {
+  /* @apply left-0 w-full; */
+}
+.animation-hover:hover:after {
+  /* @apply left-0 w-full; */
+}
+
+li.custom-list:before {
+  content: "\2022"; /* bullet point, for screen readers */
+  text-indent: -9999999px; /* move the bullet point out of sight */
+  width: 0.4em;
+  height: 1em;
+  background-repeat: no-repeat;
+  background-size: 0.4em 0.7em;
+  background-position: 0 0.3em;
+  font-size: 300%;
+  top: -0.35em;
+  /* @apply absolute block; */
+}
+li.circle-check:before {
+  background-image: url("/assets/Icon/checklist.svg");
+  left: -0.7em;
+  top: -0.4em;
+}
+li.check:before {
+  left: -0.5em;
+  background-image: url("/assets/Icon/jam_check.svg");
+  top: -0.5em;
+  font-size: 400%;
+}
+/* Slideshow */
+.slick-dots li {
+  /* @apply inline-block; */
+}
+.slick-dots span {
+  /* @apply bg-gray-500; */
+}
+.slick-dots .slick-active span {
+  /* @apply bg-orange-500 rounded-l-full rounded-r-full w-12; */
+}
+
+.border-hr {
+  border-color: #f1f1f1db;
+}
+
+.fs-6 {
+  font-size: 6rem;
+}
+
+.label-text {
+  color: "#5E6282" !important;
+}
+
+.bgLightGray {
+  background-color: #F1F2F6 !important;
+}
+
+/* .react-tel-input .form-control {
+  margin-top: 1rem important;
+  width: 100% important;
+  border-radius: 0.5rem important;
+  border-width: 1px important;
+  --tw-bg-opacity: 1 important;
+  background-color: rgb(213 213 213 / var(--tw-bg-opacity)) important;
+  padding-left: 0.75rem important;
+  padding-right: 0.75rem important;
+} */
+
+.react-tel-input .selected-flag {
+  height: 100% !important;
+}
+
+.offer{
+  margin-top: -65px !important;
+}
+
+/* purgecss end ignore */
+@tailwind utilities;
+/* purgecss start ignore */
+/* purgecss end ignore */
+
+/* Show in Large desktops and laptops */
+@media (min-width: 1200px) {
+  .bgimg {
+    /* background-image: 'url("../public/assets/images/footer_map.svg")'; */
+  }
+  /* .bgimg {
+    background-repeat: "no-repeat";
+    background-position: "right top";
+    height: "353px";
+    background-size: "50%";
+  } */
+ 
+}
+
+@media (max-width: 640px) {
+  .bgimg {
+    background-image: none;
+  }
+}
+
+/*Hide in Other Small Devices */
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .bgimg {
+    background-image: none;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .bgimg {
+    background-image: none;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .bgimg {
+    background-image: none;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .bgimg {
+    background-image: none;
+  }
+}
